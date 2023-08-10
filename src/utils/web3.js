@@ -164,7 +164,11 @@ export function isTransaction(transaction) {
  * @param {string} options.networkType The Ethereum network type (main, kovan, rinkeby, ropsten, goerli, or private).
  * @returns {string} The generated URL, or an empty string if the parameters are invalid.
  */
-export function blockExplorerUrl(type, value, { networkType = 'main' } = {}) {
+export function blockExplorerUrl(
+  type,
+  value,
+  { networkType = 'optimism' } = {}
+) {
   try {
     return _getBlockExplorer({ type, value, networkType })
   } catch (err) {
