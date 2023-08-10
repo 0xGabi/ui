@@ -15,6 +15,7 @@ const POLYGON_URL = 'polygonscan.com'
 
 const NETWORK_TYPES_URLS = new Map([
   ['main', ETHERSCAN_URL],
+  ['optimism', `optimistic.${ETHERSCAN_URL}`],
   ['kovan', `kovan.${ETHERSCAN_URL}`],
   ['rinkeby', `rinkeby.${ETHERSCAN_URL}`],
   ['ropsten', `ropsten.${ETHERSCAN_URL}`],
